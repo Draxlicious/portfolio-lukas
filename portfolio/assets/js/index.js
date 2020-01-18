@@ -1,11 +1,7 @@
-let buttonTarget = document.querySelector(".button_target");
-let sectionTwo = document.querySelector(".section__two");
-let wrapper = document.querySelector("#wrapper")
-console.log(sectionTwo);
+let buttonTarget = document.querySelector('.button_target');
+let sectionTwo = document.querySelector('.section__two');
 
-buttonTarget.addEventListener('click', function(){
-    window.scrollTo(0, 1000)
-    // sectionTwo.scrollTop = sectionTwo.scrollHeight;
-    
-
-})
+buttonTarget.addEventListener('click', function() {
+	// sectionTwo.scrollTop = sectionTwo.scrollHeight;
+	sectionTwo.scrollIntoView({ behavior: 'smooth' });
+});

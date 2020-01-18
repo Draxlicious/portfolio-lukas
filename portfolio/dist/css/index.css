@@ -36,7 +36,7 @@ button {
   }
 
   .header {
-    background-color: #8592ff;
+    background-color: #afb7ff;
     background-image: linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
     padding: 0 4em;
   }
@@ -89,7 +89,7 @@ button {
   }
 
   .contentbox__one {
-    background-color: #8592ff;
+    background-color: #afb7ff;
     background-image: linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
     border-radius: 30px;
     position: relative;
@@ -103,6 +103,7 @@ button {
   .contentbox__one .picture__container .photo__discription {
     text-align: center;
     width: 50%;
+    margin-top: 2em;
   }
   .contentbox__one .picture__container .profile__container {
     height: 55vh;
@@ -110,8 +111,8 @@ button {
   .contentbox__one .picture__container .profile__container .photo {
     background-image: url("/portfolio/images/standard_luks.png");
     background-repeat: no-repeat;
-    width: 25em;
-    height: 100%;
+    width: 26em;
+    height: 90%;
     margin: 0;
     background-size: cover;
     background-position: center;
@@ -126,7 +127,7 @@ button {
   }
   .button__container .button_target {
     padding: 1em;
-    background-color: #FFC75F;
+    background-color: #ffc75f;
     border-radius: 25px;
     border: none;
     font-size: 1.2em;

@@ -2,134 +2,134 @@
 @import "./fontstyle";
 
 /* Computer users */
-@media (min-width:600px){
+@media (min-width: 600px) {
+	* {
+		box-sizing: border-box;
+	}
 
-    *{
-        box-sizing: border-box;
-    }
-    
-    body {
-        margin:0;
-        background-color: white;
-        background-image: linear-gradient(180deg, rgba(0,0,0,0), rgba(0,0,0,0.5));
-    }
-    
-    #wrapper{
-        margin:4em 8em;
-        height:93vh;
-    }
-    
-    .header{
-        background-color: $primaryColor;
-        background-image:linear-gradient(180deg, rgba(0,0,0,0), rgba(0,0,0,0.2));
-        padding: 0 4em;
+	body {
+		margin: 0;
+		background-color: white;
+		background-image: linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
+	}
 
-        .navigation{
-            height: 10vh;
-            display: flex;
-            align-items: center;
-            justify-content: flex-end;
+	#wrapper {
+		margin: 4em 8em;
+		height: 93vh;
+	}
 
-            input[type=checkbox] {
-                display: none;
-            }
-            
-            .navigation__ul{
-                display: flex;
-                list-style-type: none;
-                justify-content: flex-end;
-                align-items: center;
+	.header {
+		background-color: $primaryColor;
+		background-image: linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+		padding: 0 4em;
 
-                .navigation__li{
-                    margin-left:2em;
-                    padding: 1.3em 0;
-                    position: relative;
+		.navigation {
+			height: 10vh;
+			display: flex;
+			align-items: center;
+			justify-content: flex-end;
 
-                    .navigation__a{
-                        text-decoration: none;
-                        color:white;
-                    }   
-                }
+			input[type=checkbox] {
+				display: none;
+			}
 
-                .navigation__li::before{
-                    content:'';
-                    top: 10%;
-                    width:0px;
-                    background-color: white;
-                    transition: width 500ms linear;
-                }
+			.navigation__ul {
+				display: flex;
+				list-style-type: none;
+				justify-content: flex-end;
+				align-items: center;
 
-                .navigation__li:hover::before{
-                    position: absolute;
-                    width:100%;
-                    height:4px;
-                } 
-            }
-        }
-    }
-    .contentbox__one::after{
-        content: '';
-        width:100%;
-        height: 20px;
-        border-radius: 10%;
-        background: linear-gradient(to bottom, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0) 100%);
-        position: absolute;
-        left:0%;
-        bottom:0%;
-    }
-    .contentbox__one{
-        background-color: $primaryColor;
-        background-image: linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(0,0,0,0.5));
-        border-radius: 30px;
-        position: relative;
+				.navigation__li {
+					margin-left: 2em;
+					padding: 1.3em 0;
+					position: relative;
 
-        .picture__container{
-            display:flex;
-            justify-content: space-evenly;
-            padding: 4em 5em 0 5em;
-            height: 55vh;
+					.navigation__a {
+						text-decoration: none;
+						color: white;
+					}
+				}
 
-             .photo__discription{
-                text-align: center;
-                width:50%;
-            }
+				.navigation__li::before {
+					content: '';
+					top: 10%;
+					width: 0px;
+					background-color: white;
+					transition: width 500ms linear;
+				}
 
-            .profile__container{
-                height:55vh;
+				.navigation__li:hover::before {
+					position: absolute;
+					width: 100%;
+					height: 4px;
+				}
+			}
+		}
+	}
+	.contentbox__one::after {
+		content: '';
+		width: 100%;
+		height: 20px;
+		border-radius: 10%;
+		background: linear-gradient(to bottom, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0) 100%);
+		position: absolute;
+		left: 0%;
+		bottom: 0%;
+	}
+	.contentbox__one {
+		background-color: $primaryColor;
+		background-image: linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
+		border-radius: 30px;
+		position: relative;
 
-                .photo{
-                    background-image: url("/portfolio/images/standard_luks.png");
-                    background-repeat: no-repeat;
-                    width: 25em;
-                    height: 100%;
-                    margin: 0;
-                    background-size: cover;
-                    background-position: center;
-                    border-radius: 50%;
-                    filter:grayscale(1);
-                }
-            }
-        }
-    }
+		.picture__container {
+			display: flex;
+			justify-content: space-evenly;
+			padding: 4em 5em 0 5em;
+			height: 55vh;
 
-    .button__container{
-        display:flex;
-        justify-content: center;
-        padding-top: 2.5em;
+			.photo__discription {
+				text-align: center;
+                width: 50%;
+                margin-top: 2em;
+			}
 
-            .button_target{
-                padding:1em;
-                background-color:#FFC75F;
-                border-radius: 25px;
-                border:none;
-                font-size: 1.2em;
-                margin: 1.5em 0;
-            }
-    }
-/* ================================= Section two ======================================*/
-    .section__two{
-        height:100vh;
-        background-color: white;
-        background-image: linear-gradient(180deg, rgba(0,0,0,0), rgba(0,0,0,0.5));
-    }
+			.profile__container {
+				height: 55vh;
+
+				.photo {
+					background-image: url("/portfolio/images/standard_luks.png");
+					background-repeat: no-repeat;
+                    width: 26em;
+                    height: 90%;
+					margin: 0;
+					background-size: cover;
+					background-position: center;
+					border-radius: 50%;
+					filter: grayscale(1);
+				}
+			}
+		}
+	}
+
+	.button__container {
+		display: flex;
+		justify-content: center;
+		padding-top: 2.5em;
+
+		.button_target {
+			padding: 1em;
+			background-color: #ffc75f;
+			border-radius: 25px;
+			border: none;
+			font-size: 1.2em;
+			margin: 1.5em 0;
+		}
+	}
+	/* ================================= Section two ======================================*/
+	.section__two {
+		height: 100vh;
+		background-color: white;
+		background-image: linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
+	}
 }

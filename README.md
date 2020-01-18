@@ -1,7 +1,8 @@
 # portfolio-lukas
 Lukas portfolio
 
-
+## if issue policy use this command:
+powershell -ExecutionPolicy Bypass
 # Sass
 <!-- live watch scss to css-->
 sass --watch src/scss:dist/css
