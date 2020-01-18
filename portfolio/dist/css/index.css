@@ -31,7 +31,7 @@ button {
   }
 
   #wrapper {
-    margin: 4em 8em;
+    padding: 4em 19em;
     height: 93vh;
   }
 
@@ -98,21 +98,17 @@ button {
     display: flex;
     justify-content: space-evenly;
     padding: 4em 5em 0 5em;
-    height: 55vh;
   }
   .contentbox__one .picture__container .photo__discription {
     text-align: center;
     width: 50%;
     margin-top: 2em;
   }
-  .contentbox__one .picture__container .profile__container {
-    height: 55vh;
-  }
   .contentbox__one .picture__container .profile__container .photo {
     background-image: url("/portfolio/images/standard_luks.png");
     background-repeat: no-repeat;
-    width: 26em;
-    height: 90%;
+    width: 23em;
+    height: 100%;
     margin: 0;
     background-size: cover;
     background-position: center;
@@ -123,7 +119,6 @@ button {
   .button__container {
     display: flex;
     justify-content: center;
-    padding-top: 2.5em;
   }
   .button__container .button_target {
     padding: 1em;
@@ -131,7 +126,7 @@ button {
     border-radius: 25px;
     border: none;
     font-size: 1.2em;
-    margin: 1.5em 0;
+    margin: 1em 0 3em 0;
   }
 
   /* ================================= Section two ======================================*/
